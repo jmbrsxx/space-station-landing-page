@@ -4,41 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Load generated CSS -->
   <link rel="stylesheet" href="output.css">
 
   <title>Landing page</title>
 </head>
-<body class="h-screen bg-cover bg-center text-white"
-  style="background-image: url('images/space\ station\ background\ image.png');">
-<div class="d-flex justify-center items-center">
-    <div class="flex items-center justify-between ">
-     <div class=" flex items-center gap-4 p-16">
+<body
+  class="min-h-screen bg-cover bg-center bg-no-repeat text-white"
+  style="background-image: url('images/space station background image.png');"
+>
+
+
+<div class="flex flex-col justify-center md:justify-between md:items-start items-center text-center ">
+    <div class="flex items-center justify-center md:justify-between gap-40 md:w-full">
+     <div class=" flex items-center gap-4 py-16 ">
       <img
         src="images/ChatGPT Image 12 de jan. de 2026, 01_56_07 1.png"
         alt="JM logo"
-        class="h-16 w-auto"
+        class="h-16 w-auto md:ml-20"
       />
-      <h1 class="text-white text-4xl font-bold">
+      <h1 class=" text-4xl md:font-bold">
         JM’s team
       </h1>
     </div>
-    <div class="flex flex-row gap-20 mr-8 items-center text-lg">
+    <div class="md:flex flex-row gap-20  items-center text-lg hidden md:mr-20">
         <ul class="flex flex-row gap-20 font-bold">
             <li><a href="#">Contact</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
         </ul>
         <button class="border-2 border-red-600 rounded-lg p-3 py-4 font-bold cursor-pointer hover:bg-red-600 duration-300">Join Now!</button>
-    </div>   
     </div>
-    <div class="m-20 w-170">
-        <h1 id="wendy-h1" class="text-7xl w-200">It’s your universe, it’s time to save it</h1>
-        <h1 class="mt-5 italic text-2xl">the universe depends on you to save it, be part of the team to help us save it, you are important for us!</h1>
+
+    </div>
+    <div class="m-20 mt-10 w-85 md:w-170 md:text-start">
+        <h1 id="wendy-h1" class=" text-5xl md:text-7xl font-bold md:mt-20">It’s your universe, it’s time to save it</h1>
+        <h1 class="mt-5 italic text-1xl md:text-2xl">the universe depends on you to save it, be part of the team to help us save it, you are important for us!</h1>
         <button class="mt-10 bg-red-600 p-6 w-full rounded-lg font-bold cursor-pointer hover:bg-red-800 duration-300">JOIN NOW FOR FREE!</button>
         <div class="flex items-center gap-5 mt-10 mb-20">
-            <img class="scale-90" src="images/Users.png" alt="Users">
-            <h1 class="font-bold text-2xl">5,678 people have joined as of now!</h1>
+            <img class="md:h-20 h-15 w-auto" src="images/Users.png" alt="Users">
+            <h1 class="font-bold text-1xl md:text-2xl">5,678 people have joined as of now!</h1>
         </div>
     </div>
 </div>
